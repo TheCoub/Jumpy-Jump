@@ -29,7 +29,7 @@ public class Character : MonoBehaviour {
 		phys.velocity = newVelocity;
 	}*/
 	void move(){
-		Vector2 newVelocity = new Vector2(walkSpeed, 0);
+		Vector2 newVelocity = new Vector2(walkSpeed, phys.velocity.y);
 		phys.velocity = newVelocity;
 	}
 	void Jump(){

@@ -12,7 +12,6 @@ public class TurnAround : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D collider){
 		GameObject collidedwith = collider.gameObject;
-
-		pc.walkSpeed = pc.walkSpeed * -1;
+		pc.walkSpeed = pc.walkSpeed * -2;
 	}
-	}
+}
